@@ -1,0 +1,46 @@
+<html>
+    <TITLE> Effect Fade </TITLE>
+<head>
+    <link rel="stylesheet" type="text/css" href="praktikum4_c.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#pics1").fadeOut();
+            });
+        });
+        $(document).ready(function(){
+            $("#button2").click(function(){
+                $("#pics1").fadeIn();
+            });
+        });
+        $(document).ready(function(){
+            $("#button3").click(function(){
+                $("#pics1").fadeTo("slow", 0.3);
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+    <div>
+        <h3 class="style1"> EFFECT FADE </h3>
+        <BR>
+        <hr align="right" width="100%" height="1px" color="black">
+        <br>
+        <br>
+        <center>
+            <button id="button1" class="button" onclick="fadeout()"> fade out </button> 
+            <button id="button2" class="button" onclick="fadein()"> fade in </button> 
+            <button id="button3" class="button" onclick="fadeto()"> fade to 0.3 </button> 
+        </center>
+        <br>
+        <br>
+        <center> <img id="pics1" src="gambar.jpg" width=400px height=400px> </center>
+    </div>
+</body>
+</html>

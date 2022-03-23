@@ -1,0 +1,45 @@
+<html>
+    <TITLE> Event Double Click </TITLE>
+<head>
+    <link rel="stylesheet" type="text/css" href="praktikum4_b.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#elemen1").dblclick(function() {
+                $("#elemen1").css('backgroundColor', '#FF9AA2');
+            });
+        });
+        $(document).ready(function(){
+            $("#elemen2").dblclick(function() {
+                $("#elemen2").css('backgroundColor', '#C7CEEA');
+            });
+        });
+        $(document).ready(function(){
+            $("#elemen3").dblclick(function() {
+                $("#elemen3").css('backgroundColor', '#FFDAC1');
+            });
+        });
+        $(document).ready(function(){
+            $("#elemen4").dblclick(function() {
+                $("#elemen4").css('backgroundColor', '#BBDFE6');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h3 class="style1"> DOUBLE CLICK </h3>
+        <BR>
+        <hr align="right" width="100%" height="1px" color="black">
+        <br>
+        <br>
+        <center> <a class="style2"> Double Click <br> kotak di bawah untuk merubah warnanya </a> </center>
+        <div id="elemen1"> </div>
+        <div id="elemen2"> </div>
+        <div id="elemen3"> </div>
+        <div id="elemen4"> </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+    <TITLE> Efek Hide </TITLE>
+    <link rel="stylesheet" type="text/css" href="praktikum4_a.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alfa+Slab+One&family=Bebas+Neue&family=Black+Han+Sans&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@100&family=Monoton&family=Pacifico&family=Passion+One&family=Secular+One&family=Unica+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#hide1").click(function(){
+                $("#pics1").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("#show1").click(function(){
+                $("#pics1").show();
+            });
+        });
+        $(document).ready(function(){
+            $("#hide2").click(function(){
+                $("#pics2").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("#show2").click(function(){
+                $("#pics2").show();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h3 class="style1"> EFFECT HIDE & SHOW </h3>
+        <BR>
+        <hr align="right" width="100%" height="1px" color="black">
+        <br>
+        <center> <button id="hide1" class="button1" onclick="hide()"> hide </button>
+        <button id="show1" class="button1" onclick="show()"> show </button> </center>
+        <center> <img id="pics1" src="praktikum4.jpg" width=400px height=225px> </center>
+        <BR>
+        <br>
+        <br>
+        <center> <button id="hide2" class="button1" onclick="hide()"> hide </button>
+        <button id="show2" class="button1" onclick="show()"> show </button> </center>
+        <center> <img id="pics2" src="praktikum5.jpg" width=400px height=225px> </center>
+    </div>
+</body>
+
+</html>
